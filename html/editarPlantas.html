@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Planta</title>
+    <link rel="stylesheet" href="/css/editarPlantas.css">
+</head>
+ 
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img src="/imgs HOME/teste2.webp" id="logo" alt="logo">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastrarPlanta.html">Cadastrar Planta</a></li>
+                <li><a href="plantasRegistradas.html">Plantas Registradas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="h1-editar-planta">Edite Informações <br>das Plantas!</h1>
+    <main class="main-content">
+        <div class="container-form">
+        <form id="formEditar">
+            <label for="nome_popular">Nome Popular:</label>
+            <input type="text" id="nome_popular" name="nome_popular" placeholder="Ex: Camomila" required>
+ 
+            <label for="nome_cientifico">Nome Científico:</label>
+            <input type="text" id="nome_cientifico" name="nome_cientifico" placeholder="Ex: Matricaria chamomilla"
+                required>
+ 
+            <label for="familia_botanica">Família Botânica:</label>
+            <input type="text" id="familia_botanica" name="familia_botanica" placeholder="Ex: Asteraceae">
+ 
+            <label for="origem">Origem / Distribuição:</label>
+            <input type="text" id="origem" name="origem" placeholder="Ex: Europa, Ásia...">
+ 
+            <label for="usos_medicinais">Usos Medicinais:</label>
+            <textarea id="usos_medicinais" name="usos_medicinais" rows="3"
+                placeholder="Ex: Chá calmante, auxilia no sono..."></textarea>
+ 
+            <label for="principios_ativos">Princípios Ativos:</label>
+            <textarea id="principios_ativos" name="principios_ativos" rows="3"
+                placeholder="Ex: Flavonoides, alcaloides..."></textarea>
+ 
+            <label for="parte_utilizada">Parte Utilizada:</label>
+            <input type="text" id="parte_utilizada" name="parte_utilizada" placeholder="Ex: Flor, folha, raiz...">
+ 
+            <label for="modo_preparo">Modo de Preparo:</label>
+            <textarea id="modo_preparo" name="modo_preparo" rows="3"
+                placeholder="Ex: Infusão, decocção, óleo..."></textarea>
+ 
+            <label for="contraindicacoes">Contraindicações:</label>
+            <textarea id="contraindicacoes" name="contraindicacoes" rows="3"
+                placeholder="Ex: Não indicado para gestantes..."></textarea>
+ 
+            <label for="imagem">URL da Imagem:</label>
+            <input type="text" id="imagem" name="imagem" placeholder="Cole aqui a URL da imagem">  
+            <button type="submit" id="btn-cadastrar">Editar Planta</button>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pedro Farenzena & Éllen Vieira &copy;</p>
+    </footer>
+ 
+    <script src="/js/editar.js"></script>
+</body>
+</html>

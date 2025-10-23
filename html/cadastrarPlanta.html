@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Planta</title>
+    <link rel="stylesheet" href="/css/cadastar.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img src="/imgs HOME/teste2.webp" id="logo" alt="logo">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastrarPlanta.html">Cadastrar Planta</a></li>
+                <li><a href="plantasRegistradas.html">Plantas Registradas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="container-form">
+        <form id="formCadastro">
+            <label for="nome">Nome :</label>
+            <input type="text" id="nomeInput" name="nomeInput" placeholder="" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="emailInput" name="emailInput" placeholder="" required>
+
+            <label for="Senha">Senha:</label>
+            <input type="password" id="senhaInput" name="senhaInput" placeholder="" required>
+ 
+            <label for="Senha">Foto do Perfil:</label>
+            <input type="file" name="arquivo" id="arquivo" accept="image/*" required />
+ 
+            <button type="submit" id="btn-cadastrar">Cadastrar Planta</button>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pedro Farenzena & Éllen Vieira &copy;</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
