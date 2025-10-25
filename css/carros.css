@@ -105,6 +105,34 @@ li {
     height: auto;
 }
 
+#a-editar{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+}
+
+#a-editar:hover{
+    text-decoration: underline;
+    transition: ease-in-out 0.3s;
+    border: 2px solid grey;
+    padding: 10px;
+    color: grey;
+}
+
+#btn-deletar{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
 
 footer {
   display: flex;

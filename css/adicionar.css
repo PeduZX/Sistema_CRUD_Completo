@@ -108,7 +108,14 @@ input{
 input:focus{
     transform: scale(1.1);
     outline: none;
+ 
 }
+
+#input-file {
+  padding: 1.5vh;
+  background-color: white;
+}
+
 #btn-cadastro-user{
   width: 15vw;
   height: 5vh;
