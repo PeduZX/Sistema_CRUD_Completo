@@ -106,7 +106,7 @@ input:focus{
     transform: scale(1.1);
     outline: none;
 }
-#btn-cadastro-user{
+#btn-login-user{
   width: 15vw;
   height: 5vh;
   border-radius: 5px;
@@ -115,7 +115,7 @@ input:focus{
   transition: ease-in-out 0.3s;
 }
 
-#btn-cadastro-user:hover{
+#btn-login-user:hover{
   background-color: rgb(138, 145, 138);
   transition: ease-in-out 0.3s;
 }

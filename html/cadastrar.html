@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros</title>
+    <title>Cadastrar Usuario</title>
     <link rel="stylesheet" href="/css/cadastrar.css">
      <link
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
@@ -29,19 +29,20 @@
     <div id="container">
         <form action="">
             <label for="">Nome:</label>
-            <input type="text" placeholder=" Nome">
+            <input id="nome" type="text" placeholder=" Nome" required>
             <label for="">Email:</label>
-            <input type="email" placeholder=" nome@email.com">
+            <input id="email" type="email" placeholder=" nome@email.com" required>
             <label for="">Senha:</label>
-            <input type="text" placeholder=" Ex.: 1234">
-            <button id="btn-cadastro-user">cadastrar</button>
+            <input id="senha" type="password" placeholder=" Ex.: 1234" required>
+            <button onclick="cadastrar()" id="btn-cadastro-user" type="button">Cadastrar</button>
             <a id="a-login" href="login.html">Já tem conta?</a>
+            <p id="msg" style="text-align: center; color: black;"></p>
         </form>
     </div>
   </main>
    <footer>
         <p>Desenvolvido por Athos Souza, Henzo bollis, Pedro Farenzena &copy;</p>
     </footer>
-
+    <script src="/js/script-cadastro.js"></script>
 </body>
 </html>

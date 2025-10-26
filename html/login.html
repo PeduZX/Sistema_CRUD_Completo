@@ -29,17 +29,18 @@
     <div id="container">
         <form action="">
             <label for="">Email:</label>
-            <input type="email" placeholder=" nome@email.com">
+            <input id="email" type="email" placeholder=" nome@email.com">
             <label for="">Senha:</label>
-            <input type="text" placeholder=" Ex.: 1234">
-            <button id="btn-cadastro-user">Login</button>
+            <input id="senha" type="password" placeholder=" Ex.: 1234">
+             <button onclick="login()" type="button" id="btn-login-user">Login</button>
             <a id="a-login" href="cadastrar.html">Não tem conta?</a>
+            <p id="msg"></p>
         </form>
     </div>
   </main>
    <footer>
         <p>Desenvolvido por Athos Souza, Henzo bollis, Pedro Farenzena &copy;</p>
     </footer>
-
+        <script src="/js/script-cadastro.js"></script>
 </body>
 </html>

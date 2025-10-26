@@ -30,16 +30,16 @@
         <form action="">
             <img src="/img/lambo.png" alt="bmw m4" style="width: 15vw; height: 7vw;">
             <label for="">Modelo:</label>
-            <input type="text" placeholder=" Tiguan, Gol, M5">
+            <input id="modelo" type="text" placeholder=" Tiguan, Gol, M5" required>
             <label for="">Marca:</label>
-            <input type="email" placeholder=" BMW, Mercedes, Audi">
+            <input id="marca" type="text" placeholder=" BMW, Mercedes, Audi" required> 
             <label for="">Origem fabricante:</label>
-            <input type="text" placeholder=" Brasil, Alemanha, Japão">
+            <input id="origem" type="text" placeholder=" Brasil, Alemanha, Japão" required>
             <label for="">Tipo da carroceria:</label>
-            <input type="text" placeholder=" Sedan, Hatch, SUV, Coupé">
+            <input id="carroceria" type="text" placeholder=" Sedan, Hatch, SUV, Coupé" required>
             <label for="">Adicione uma imagem do carro:</label>
             <input id="input-file" type="file">
-            <button id="btn-cadastro-user">cadastrar</button>
+            <button onclick="cadastrarCarro()" id="btn-cadastro-user" type="button">cadastrar</button>
         </form>
     </div>
   </main>
@@ -47,6 +47,6 @@
    <footer>
         <p>Desenvolvido por Athos Souza, Henzo bollis, Pedro Farenzena &copy;</p>
     </footer>
-
+        <script src="/js/script-carros.js"></script>
 </body>
 </html>
