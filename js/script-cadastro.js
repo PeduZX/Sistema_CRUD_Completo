@@ -43,24 +43,14 @@ async function login() {
 
     const data = await response.json();
 
-    if (response.ok && email === "Admin@teste.com" && senha === "1234") { 
-      // Exemplo: armazenar email e id no sessionStorage
-      const usuario = {
-        email: email,
-       
-        nome: data.nome || "Administrador"
-      };
-
-      sessionStorage.setItem("usuarioLogado", JSON.stringify(usuario));
-
+    if (response.ok) { 
       msg.textContent = data.message || "Login bem-sucedido!";
       msg.style.color = 'green';
       document.querySelector('form').reset();
 
-      // exemplo: redirecionar para outra página
       setTimeout(() => {
-        window.location.href = "dashboard.html";
-      }, 5000)
+        window.location.href = "index.html";
+      }, 3000)
 
     } else {
       msg.textContent = data.error || 'Erro ao Logar usuário.';
