@@ -10,6 +10,7 @@ senha VARCHAR(255) NOT NULL
 );
  
 CREATE TABLE carros(
+id INT PRIMARY KEY AUTO_INCREMENT,
 modelo VARCHAR(255),
 marca VARCHAR(255),
 origem_fabricante VARCHAR(255),
@@ -23,3 +24,7 @@ data_upload TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 SELECT * FROM users;
 
 SELECT * FROM carros;
+
+DELETE FROM carros WHERE id = 1;
+
+
